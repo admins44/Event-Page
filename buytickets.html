@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy tickets</title>
+    <style>
+         body{
+            background-size: cover;
+            background-image: url(https://www.houseoffrankie.com/wportal/wp-content/uploads/2018/08/zD0sz0L-e1533117295821.jpg);
+            margin: 0;
+            overflow: hidden ;
+            background-repeat: no-repeat;
+            
+        }
+        .nav-header {
+            width: 100%;
+            border: 1px solid black;
+            background:rgba(80,80,80,0.2);
+            padding-left: 200px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color:white;
+            font-size: 40px;
+            padding-bottom: 20px;
+            padding-top: 20px;
+        }
+
+      .headnav{
+        float:left;
+      }
+      a{
+        font-size: 20px;
+        margin-right: 20px;
+        margin-left: 100px;
+        text-decoration: none;
+        color: white;
+      }
+      a:hover{
+        color: rgb(190, 24, 24);
+      }
+      .buttons{
+        margin-left:140px;
+        padding: 16px 16px 16px 16px;
+        font-weight: bold;
+        font-size: 15px;
+        background-color: rgb(190, 24, 24);
+        color: white;
+        border-color: rgb(190, 24, 24);
+        filter: drop-shadow(1px 1px 1px black);
+        border-radius: 10px;
+      }
+      .buttons:hover{
+        color:black;
+      }
+      .mainbox{
+        width: 45%;
+        height: 540px;
+        background-color: rgba(24, 25, 26, 0.473);
+        margin-top: 80px;
+        padding: 10px 10px 10px 10px;
+        border: 1px solid black;
+      }
+      h2{
+        color:white;
+        font-size: 35px;
+        filter: drop-shadow(2px 3px 1px black);
+      }
+      .ButtonState{
+        display:none;
+    }
+      .Button{
+        padding:6px 6px 6px 6px; 
+        margin:4px; 
+        background:#CCC; 
+        border:1px solid #333; 
+        cursor:pointer;
+        font-size: 20px;
+        border-radius: 20px;
+    }
+      .ButtonState:checked + .Button{
+        background:rgb(7, 7, 7);
+        color: white;
+    }
+    h3{
+        color:white;
+        margin-left: 20px;
+        filter: drop-shadow(2px 3px 1px black);
+        text-align: left;
+    }
+    .ButtonState{
+        display:none;
+    }
+      .Buttons{
+        padding:6px 6px 6px 6px; 
+        margin:4px; 
+        background:#CCC; 
+        border:1px solid #333; 
+        cursor:pointer;
+        font-size: 20px;
+        border-radius: 20px;
+    }
+      .ButtonState:checked + .Buttons{
+        background:rgb(7, 7, 7);
+        color: white;
+    }
+    label{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+.counter {
+    width: 150px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -5px;
+    margin-top: 14px;
+}
+.counter input {
+    width: 50px;
+    border: 0;
+    line-height: 30px;
+    font-size: 20px;
+    text-align: center;
+    background: #000000a9;
+    color: #fff;
+    appearance: none;
+    outline: 0;
+    margin-left: -5px;
+}
+.counter span {
+    display: block;
+    font-size: 25px;
+    padding: 0 10px;
+    cursor: pointer;
+    color: #ffffff;
+    user-select: none;
+    margin-left: -5px;
+    margin-top: -5px;
+}
+.numberbox{
+    height: 40px;
+    width: 130px;
+    border: 1px solid rgba(0, 0, 0, 0.527);
+    padding: 5px 5px 5px 5px;
+}
+button{
+    width: 30%;
+    margin-top: 30px;
+    font-size: 25px;
+    padding: 5px 5px 5px 5px;
+    background-color: #000000;
+    color: white;
+}
+button:hover{
+    color: black;
+    background-color: white;
+}
+input{
+    width: 50%;
+    height: 30px;
+    text-align: center;
+    margin-top: -10px;
+}
+::placeholder{
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <div class="nav-header">
+        BIG EVENT
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="speakers.html">SPEAKERS</a>
+                <a href="event.html">EVENT</a>
+                <a class="buttons" href="buytickets.html">BUY TICKETS</a>
+    </div>
+
+   <center><div class="mainbox">
+            <h2>2022 Cebu Music Festival</h2>
+            <h3>Email</h3>
+            <input type="email" placeholder="Email"></input>
+            <h3>Choose:</h3>
+            <input type="radio" name="Button" class="ButtonState" checked id="Button1" value="1"/>
+            <label class="Button" for="Button1">BEN&BEN</label>
+            <input type="radio" name="Button" class="ButtonState" id="Button2" value="2"/>
+            <label class="Button" for="Button2">CUESHE'</label>
+            <input type="radio" name="Button" class="ButtonState" id="Button3" value="3"/>
+            <label class="Button" for="Button3">PAROKYA NI EDGAR</label>
+            <input type="radio" name="Button" class="ButtonState" id="Button4" value="4"/>
+            <label class="Button" for="Button4">ERASERHEADS</label>
+            <h3>Ticket Type:</h3>
+            <input type="radio" name="Buttons" class="ButtonState" checked id="Button5" value="5"/>
+            <label class="Button" for="Button5">SILVER</label>
+            <input type="radio" name="Buttons" class="ButtonState" id="Button6" value="6"/>
+            <label class="Button" for="Button6">GOLD</label>
+            <input type="radio" name="Buttons" class="ButtonState" id="Button7" value="7"/>
+            <label style="padding:6px 20px 6px 20px" class="Button" for="Button7">VIP</label>
+            <h3>Quantity</h3>
+        <div class="numberbox">
+            <div class="counter">
+                <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                <input type="text" value="1">
+                <span class="up" onClick='increaseCount(event, this)'>+</span>
+              </div>
+        </div>
+        <button type="submit" onclick="myalert()">Buy it now</button>
+    </center></div>
+    
+ <script>
+
+    function increaseCount(a, b) {
+  var input = b.previousElementSibling;
+  var value = parseInt(input.value, 10);
+  value = isNaN(value) ? 0 : value;
+  value++;
+  input.value = value;
+}
+
+function decreaseCount(a, b) {
+  var input = b.nextElementSibling;
+  var value = parseInt(input.value, 10);
+  if (value > 1) {
+    value = isNaN(value) ? 0 : value;
+    value--;
+    input.value = value;
+  }
+}
+function myalert() {
+            alert("The Payment has been sent to your Email.                                           Thank you! See you in the event.");
+}
+ </script>
+</body>
+</html>

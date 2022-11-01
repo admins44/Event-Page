@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+
+    <style>
+        body{
+            background-size: cover;
+            background-image: url(https://i.pinimg.com/originals/c9/19/cc/c919cca2c75ec804a3a75f222bc20d22.jpg);
+            margin: 0;
+            background-repeat: no-repeat;
+        }
+        .nav-header {
+            max-width: 100%;
+            border: 1px solid black;
+            background:rgba(80,80,80,0.6);
+            padding-left: 200px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color:white;
+            font-size: 40px;
+            padding-bottom: 20px;
+            padding-top: 20px;
+        }
+        a{
+        font-size: 20px;
+        margin-right: 20px;
+        margin-left: 100px;
+        text-decoration: none;
+        color: white;
+      }
+      a:hover{
+        color: rgb(190, 24, 24);
+      }
+      .buttons{
+        margin-left:140px;
+        padding: 16px 16px 16px 16px;
+        font-weight: bold;
+        font-size: 15px;
+        background-color: rgb(190, 24, 24);
+        color: white;
+        border-color: rgb(190, 24, 24);
+        filter: drop-shadow(1px 1px 1px black);
+        border-radius: 10px;
+        margin-right: 105px;
+      }
+      .buttons:hover{
+        color:black;
+      }
+      h1{
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+        filter: drop-shadow(3px 4px 5px rgba(0, 0, 0, 0.877));
+    
+      }
+      p{
+        color: rgba(247, 247, 247, 0.993);
+        font-size: 20px;
+        margin-left: 35px;
+        margin-right: 35px;
+        text-align: center;
+      }
+      h2{
+        color: white;
+        font-size: 50px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+        filter: drop-shadow(0px 3px 3px black);
+      }
+
+      .box{
+        width: 96%;
+        height: 360px;
+        display: flex;
+        overflow: hidden;
+        padding: 10px 20px 20px 20px;
+        margin-top: -40px;
+      }
+      .poster{
+        flex:1;
+        margin-right: 10px;
+        margin-left: 80px;
+        overflow: hidden;
+        border-radius: 15px;
+        filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.925));
+        transition: 1s;
+        height:280px;
+        width: 250px;
+        border: 1px soild black;
+        padding: 10px 10px 10px 10px;
+        background-color: rgba(15, 10, 41, 0.466);
+      }
+      .poster:hover{
+        transform:scale(1.3);
+      }
+      .apost{
+        margin: 0;
+      }
+      h3{
+        color: white;
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color:  rgba(15, 10, 41, 0.466);
+        padding:5px 5px 5px 5px;
+        margin-left: 150px;
+        font-size: 18px;
+        margin-top: 30px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+      h4{
+        color: white;
+        margin-left: 20px;
+        font-weight: normal;
+        text-align: left;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+
+      .flip-box {
+  width: 290px;
+  height: 300px;
+  perspective: 1000px;
+  margin-left: 50px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+   
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+   
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  margin-top: -30px;
+}
+
+.flip-box-front {
+  background-color: rgba(187, 187, 187, 0);
+  color: black;
+   
+}
+
+.flip-box-back {
+  background-color: rgba(14, 41, 68, 0.692);
+  color: white;
+  transform: rotateY(180deg);
+  margin-left: -64px;
+  margin-top: 50px;
+  
+}
+    </style>
+</head>
+<body>
+    <div class="nav-header">
+        BIG EVENT
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="speakers.html">SPEAKERS</a>
+                <a href="event.html">EVENT</a>
+                <a class="buttons" href="buytickets.html">BUY TICKETS</a>
+    </div>
+    <br> 
+    <h2>Concerts and Music Festivals to Watch in PH this 2022.</h2>
+    <p> Once again, the biggest music halls and grounds are opening their doors to local and foreign acts as the country began hosting live acts and shows since the onset of the COVID-19 pandemic in 2020. Below, you’ll find some of the hottest and most in-demand artists and musicians who will be performing in the Philippines throughout 2022.</br>
+      <h1 >LIVE CONCERTS ARE BACK, BABY!</h1>
+      <br><br>
+    <br>
+   <center><div class="box">
+
+    <div class="flip-box">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+           <h3>Check it now! </br> ↓</h3>
+          <img class="poster" src="https://i.scdn.co/image/eeea779a343ac92a019193f0b4f69692a66b8d2b"/>
+        </div>
+        <div class="flip-box-back">
+          <h2>BEN&BEN</h2>
+          <h4>
+            When: December 20, 2022 </br><br>
+            Where: Consolacion Cebu</br><br>
+            Where to buy tickets: Ticketnet outlets, Ticketnet Online, or Ovation Tickets
+          </h4><br>
+          <a style="margin-left: 75px;"class="buttons"href="buytickets.html">Buy Tickets</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-box">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <h3>Check it now!</br> ↓</h3>
+          <img class="poster" src="https://i.scdn.co/image/ab67616d0000b273db0d1e63a23b064f28194bd7"/>
+        </div>
+        <div class="flip-box-back">
+          <h2>Cueshé</h2>
+          <h4>
+            When: December 19, 2022 </br><br>
+            Where: Consolacion Cebu</br><br>
+            Where to buy tickets: Ticketnet outlets, Ticketnet Online, or Ovation Tickets
+          </h4><br>
+          <a style="margin-left: 75px;"class="buttons"href="buytickets.html">Buy Tickets</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-box">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <h3>Check it now!</br> ↓</h3>
+          <img class="poster" src="https://i.scdn.co/image/ab67706f00000003108a24b6ce38ef488f3263ff"/>
+
+        </div>
+        <div class="flip-box-back">
+          <h2 style="font-size: 36px;">Parokya ni Edgar</h2>
+          <h4>
+            When: December 21, 2022 </br><br>
+            Where: Consolacion Cebu</br><br>
+            Where to buy tickets: Ticketnet outlets, Ticketnet Online, or Ovation Tickets
+          </h4><br><br><br>
+          <a style="margin-left: 75px;"class="buttons"href="buytickets.html">Buy Tickets</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-box">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <h3>Check it now!</br> ↓</h3>
+          <img class="poster" src="https://lh6.ggpht.com/NEX2KGpLmQOcDF0_iq0wWvz8OU0hhYnUXJhu5djmAaIBwuuPWU7Nm9Z5nY5URFM3zZnw"/>
+        </div>
+        <div class="flip-box-back">
+          <h2>Eraserheads</h2>
+          <h4>
+            When: December 22, 2022 </br><br>
+            Where: Consolacion Cebu</br><br>
+            Where to buy tickets: Ticketnet outlets, Ticketnet Online, or Ovation Tickets
+          </h4><br>
+          <a style="margin-left: 75px;"class="buttons"href="buytickets.html">Buy Tickets</a>
+        </div>
+      </div>
+    </div>
+   </center></div>
+  
+</body>
+</html>
